@@ -4,6 +4,7 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+
 body{
     background-image: url("../Image/new.jpg");
     background-repeat: no-repeat;
@@ -11,6 +12,11 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+
+/*-------------------------------------------------------  Header Section --------------------------------------------------------------------*/
+
+
+
 .header{
     width: 99%;
     height: 50px;
@@ -22,10 +28,12 @@ body{
     border:1px solid black;
     
 }
+
 .header:hover{
     background-color: rgb(89,49,20);
     
 }
+
 .header .icon{
     color: rgb(206,189,123);
     font-size: 25px;
@@ -33,6 +41,7 @@ body{
     margin-top: 7px;
     margin-left: 10px;
 } 
+
 .header .items{
     color:rgb(206,189,123) ;
     font-size: 16px;
@@ -40,6 +49,7 @@ body{
     margin-top: 12px;
     margin-left: 1px;
 }
+
 .header .fa-phone{
    
     color: rgb(206,189,123);
@@ -48,22 +58,34 @@ body{
     margin-top: 8px;
     margin-left: 200px;
 } 
+
 .header .fa-facebook{
     margin-left: 545px;
 }
+
 .header .fa-twitter{
     margin-left: 50px;
 }
+
 .header .fa-instagram{
     margin-left: 50px;
 }
+
 .header .fa-linkedin{
     margin-left: 50px;
 }
+
 .header .icon:hover{
     color: black;
     
 }
+
+
+/*--------------------------------------------------- Navigation Bar -----------------------------------------------------------------------*/
+
+
+
+
 .navibar{
     width: 99%;
     height: 100px;
@@ -78,33 +100,37 @@ body{
     
     
 }
+
 .navibar ul {
     display: flex;
    
 }
+
 .navibar ul li{
     list-style-type: none;
     padding: 10px 20px ;
    
     
 }
+
 .navibar ul li a{
     color: aliceblue;
     text-decoration: none;
     padding: 10px;
-   
+    margin-left: 24px;
    
 }
 
 .navibar ul li a:hover{
     color:rgb(89,49,20) ;
-   
-    background-color: rgb(222,162,129);
+    
+    background-color:  rgb(206,189,123);
     border-radius: 5px;
     
 }
+
 .navibar .list{
-    width: 70%;
+    width: 66%;
     
     justify-content:center;
    
@@ -118,22 +144,100 @@ body{
     height: 70px;
     justify-content:center;
     
+    
    
    
    
-}
+} 
+
 .navibar .log img{
     width: 140px;
     height: 70px;
     margin-left: 70px;
    
    
+} 
+
+
+                               /*Buttons*/
+
+
+.navibar .sig{
+    width: 13%;
+    height: 70px;
+    margin-left: 0px;
+    display: flex;
+    background-color:transparent;
+    align-items: center;
+    justify-content:center;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgb(89,49,20) ;
 }
+
+.navibar .sig:hover{
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    transition: 1s;
+} 
+
+
+.navibar .but{
+    margin-left:  11px;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: rgb(89,49,20);
+    color: rgb(206,189,123);
+}
+
+.navibar .but:hover{
+    color: aliceblue;
+    border: 1px solid black;
+    background-color: transparent;
+    transition: 1s;
+}
+
+
+
+
+
+/*---------------------------------------------------------content section----------------------------------------------------------------*/
+
+
 
 .content{
     width: 100%;
     height: 100vh;
+   
 }
+
+.sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:280px 280px;
+    margin-left:0.5%;
+    margin-right: 0.5%;
+    width: 99%;
+    height: 560px;
+    
+}
+
+.title, .im{
+    
+}
+
+.ser{
+    height: 560px;
+    
+}
+
+
+/*----------------------------------------------------------Next Page-------------------------------------------------------------------*/
+
+
+
 .next{
     width: 100%;
     height: 100vh;

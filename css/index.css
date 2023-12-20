@@ -12,12 +12,15 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /*-------------------------------------------------------  Header Section --------------------------------------------------------------------*/
 
 
 
-.header{
+.content .header{
     width: 99%;
     height: 50px;
     margin-left: 0.5%;
@@ -29,10 +32,7 @@ body{
     
 }
 
-.header:hover{
-    background-color: rgb(89,49,20);
-    
-}
+
 
 .header .icon{
     color: rgb(206,189,123);
@@ -210,28 +210,92 @@ body{
 .content{
     width: 100%;
     height: 100vh;
-   
+    
+    
+    
 }
 
 .sec{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:280px 280px;
+    grid-template-rows:282.5px 282.5px;
     margin-left:0.5%;
     margin-right: 0.5%;
     width: 99%;
-    height: 560px;
+    height: 565px;
+    
     
 }
 
 .title, .im{
     
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+
+.title span{
+    
+    
+    color:rgb(206,189,123);
+    font-size: 95px;
+    font-family: emoji;
+    letter-spacing: 10px;
+    text-shadow: 0px 1px 0px black, 0px 2px 0px black,0px 3px 0px black,0px 4px 0px black,0px 5px 0px black,0px 6px 0px black,
+    0px 7px 0px black,0px 8px 0px black,0px 9px 0px black;
+    animation: 3s mov linear infinite;
+    
+    
+}
+@keyframes mov{
+    50%{
+        transform: translateY(-100px);
+        
+        text-shadow: 0px 1px 0px black, 0px 2px 0px black,0px 3px 0px black,0px 4px 0px black,0px 5px 0px black,0px 6px 0px black,
+        0px 7px 0px black,0px 8px 0px black,0px 9px 0px black,0px 50px 10px white;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+span:nth-child(1){
+     animation-delay: .5s;
+}
+span:nth-child(2){
+    animation-delay: 1s;
+}
+span:nth-child(3){
+    animation-delay: 1.5s;
+}
+span:nth-child(4){
+    animation-delay: 2s;
+}
+span:nth-child(5){
+    animation-delay: 2.5s;
+}
+span:nth-child(6){
+    animation-delay: 3s;
+}
+span:nth-child(7){
+    animation-delay: 3.5s;
+}
+span:nth-child(8){
+    animation-delay: 4s;
 }
 
 .ser{
-    height: 560px;
+    height: 565px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+.ser img{
+    height: 500px;
+    margin-left: 60px;
+}
+
 
 
 /*----------------------------------------------------------Next Page-------------------------------------------------------------------*/
@@ -241,6 +305,7 @@ body{
 .next{
     width: 100%;
     height: 100vh;
-    background-color: rgb(139,86,50);
+    
+    background-color:sandybrown;
 }
 

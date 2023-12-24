@@ -12,29 +12,42 @@ html{
 }
 
 body{
+    
+    background-attachment: fixed;
+}
+section{
+    width: auto;
+    height: 100vh;
     background-image: url("../Image/new.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 
 /*-------------------------------------------------------  Header Section --------------------------------------------------------------------*/
 
+.header{
+    width: auto;
+    height: 26.5vh;
+  
+    
+}
 
+                           /*----------------------- head ----------------------------*/
 
  .head{
     width: 99%;
     height: 50px;
     margin-left: 0.5%;
-    margin-top: 2vh;
+    
     background-color:rgb(89,49,20);
     border-radius: 5px;
     display: flex;
-    border:1px solid black;
-   
-    
+    position: relative;
+    top: 2vh;
+    position: fixed;
+    top: 2vh;
 }
 
 
@@ -87,22 +100,25 @@ body{
 }
 
 
-/*--------------------------------------------------- Navigation Bar -----------------------------------------------------------------------*/
+                                     /*----------------------- Navigation bar ----------------------------*/
 
 
 
 
-.header .navibar{
+ .navibar{
     width: 99%;
-    height: 100px;
+    height:100px;
     background-color:transparent;
-    border: 1px solid black;
     margin-top: 2vh;
     margin-left: 0.5%;
     box-shadow: 0px 0px 20px black;
     display: flex;
     align-items: center;
-    
+    margin-bottom: 2vh;
+    position: relative;
+    top: 2vh;
+    position:fixed;
+    top: 10vh;
   
     
     
@@ -201,7 +217,7 @@ nav a:nth-child(1):hover~span{
 } 
 
 
-                               /*Buttons*/
+                               /*---------------------------Buttons--------------------*/
 
 
 .navibar .sig{
@@ -249,10 +265,100 @@ nav a:nth-child(1):hover~span{
 
 
 
+
+
 .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:36.7vh 36.7vh;
+    width:auto;
+    height: 73.4vh;
+    
+   
+    
+}
+
+.title, .im{
+    margin-left: 0.5%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    
+}
+.title span{
+    
+    
+    color:rgb(206,189,123);
+    font-size: 95px;
+    font-family: emoji;
+    letter-spacing: 10px;
+    text-shadow: 0px 1px 0px black, 0px 2px 0px black,0px 3px 0px black,0px 4px 0px black,0px 5px 0px black,0px 6px 0px black,
+    0px 7px 0px black,0px 8px 0px black,0px 9px 0px black;
+    animation: 3s mov linear infinite;
+    
+    
+}
+@keyframes mov{
+    50%{
+        transform: translateY(-100px);
+        
+        text-shadow: 0px 1px 0px black, 0px 2px 0px black,0px 3px 0px black,0px 4px 0px black,0px 5px 0px black,0px 6px 0px black,
+        0px 7px 0px black,0px 8px 0px black,0px 9px 0px black,0px 50px 10px white;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+span:nth-child(1){
+     animation-delay: .5s;
+}
+span:nth-child(2){
+    animation-delay: 1s;
+}
+span:nth-child(3){
+    animation-delay: 1.5s;
+}
+span:nth-child(4){
+    animation-delay: 2s;
+}
+span:nth-child(5){
+    animation-delay: 2.5s;
+}
+span:nth-child(6){
+    animation-delay: 3s;
+}
+span:nth-child(7){
+    animation-delay: 3.5s;
+}
+span:nth-child(8){
+    animation-delay: 4s;
+}
+.content .ser{
+    height:  73.4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ser{
+   margin-right: 0.5%;
+}
+
+.ser img{
+    height: 500px;
+    margin-left: 60px;
+}
+
+/*----------------------------------------------------------Next Page-------------------------------------------------------------------*/
+
+.next{
     width: 100%;
     height: 100vh;
-    font-size: 16px;
+    
+    background-color:sandybrown;
+}
     
 
 

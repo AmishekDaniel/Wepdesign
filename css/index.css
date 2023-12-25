@@ -231,14 +231,15 @@ nav a:nth-child(1):hover~span{
     border-radius: 5px;
     border: 1px solid black;
     box-shadow: 0 0 10px rgb(89,49,20) ;
-}
+}  
 
 .navibar .sig:hover{
     border: none;
     background-color: transparent;
     box-shadow: none;
     transition: 1s;
-} 
+     
+}
 
 
 .navibar .but{
@@ -399,7 +400,7 @@ span:nth-child(8){
     
     
     
-}
+
 
 .sec{
     display: grid;
@@ -493,6 +494,6 @@ span:nth-child(8){
     width: 100%;
     height: 100vh;
     
-    background-color:sandybrown;
+    background-color:rgb(206,189,123);
 }
 

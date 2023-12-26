@@ -248,62 +248,31 @@ section{
     
 }
 
-.title, .im{
+.content .title, .im{
     margin-left: 0.5%;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     
     
 }
-.title span{
+.title h1{
+    color: yellowgreen;
     
-    
-    color:rgb(206,189,123);
-    font-size: 95px;
-    font-family: emoji;
-    letter-spacing: 10px;
-    text-shadow: 0px 1px 0px black, 0px 2px 0px black,0px 3px 0px black,0px 4px 0px black,0px 5px 0px black,0px 6px 0px black,
-    0px 7px 0px black,0px 8px 0px black,0px 9px 0px black;
-    animation: 3s mov linear infinite;
-    
-    
+    text-shadow: 0 0 10px yellowgreen, 0 0 10px yellowgreen;
+    animation: light 1.5s linear infinite;
+
 }
-@keyframes mov{
-    50%{
-        transform: translateY(-100px);
-        
-        text-shadow: 0px 1px 0px black, 0px 2px 0px black,0px 3px 0px black,0px 4px 0px black,0px 5px 0px black,0px 6px 0px black,
-        0px 7px 0px black,0px 8px 0px black,0px 9px 0px black,0px 50px 10px white;
+
+@keyframes light{
+    0%{
+        filter: hue-rotate(0deg);
     }
     100%{
-        transform: translateY(0px);
+        filter: hue-rotate(360deg);
     }
 }
-span:nth-child(1){
-     animation-delay: .5s;
-}
-span:nth-child(2){
-    animation-delay: 1s;
-}
-span:nth-child(3){
-    animation-delay: 1.5s;
-}
-span:nth-child(4){
-    animation-delay: 2s;
-}
-span:nth-child(5){
-    animation-delay: 2.5s;
-}
-span:nth-child(6){
-    animation-delay: 3s;
-}
-span:nth-child(7){
-    animation-delay: 3.5s;
-}
-span:nth-child(8){
-    animation-delay: 4s;
-}
+
 .content .ser{
     height:  73.4vh;
     display: flex;

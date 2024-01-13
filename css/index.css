@@ -41,7 +41,7 @@ section{
     height: 50px;
     margin-left: 0.5%;
     
-    background-color:rgb(89,49,20);
+    background-color:#00202B ;
     border-radius: 5px;
     display: flex;
     position: relative;
@@ -54,7 +54,7 @@ section{
 
 
 .head .icon{
-    color: rgb(206,189,123);
+    color: #ffffff;
     font-size: 25px;
     padding: 5px;
     margin-top: 7px;
@@ -62,7 +62,7 @@ section{
 } 
 
 .head .items{
-    color:rgb(206,189,123) ;
+    color:#ffffff ;
     font-size: 16px;
     padding: 3px;
     margin-top: 12px;
@@ -71,7 +71,7 @@ section{
 
 .head .fa-phone{
    
-    color: rgb(206,189,123);
+    color: #ffffff;
     font-size: 22px;
     padding: 5px;
     margin-top: 8px;
@@ -95,7 +95,7 @@ section{
 }
 
 .head .icon:hover{
-    color: black;
+    color: #B2FFFF;
     
 }
 
@@ -140,7 +140,7 @@ section{
     color: aliceblue;
     display: inline-block;
     text-decoration: none;
-    
+    transition:1s;
     padding: 10px;
     margin-left: 24px;
     z-index: 1;
@@ -148,11 +148,15 @@ section{
 
 
 
-.navibar ul li a:hover{
-    color:rgb(89,49,20) ;
-    
-    background-color:  rgb(206,189,123);
-    border-radius: 5px;
+
+
+.navibar ul li a:nth-child(1):hover{
+   /* color:rgb(89,49,20) ;*/
+    transition:1s;
+ /*   background-color:  rgb(206,189,123);*/
+    border-bottom:3px solid rgb(206,189,123);
+    border-radius: 0px;
+	
     
 }
 
